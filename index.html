@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="intro-screen" class="intro-screen">
+  <img src="image/foto1.png" alt="Foto Kepala" class="head-bounce" />
+  <h1>Haii... Selamat Datang</h1>
+  <button id="openBtn">Open</button>
+</div>
+
+  <!-- Main content -->
+  <div id="main-content" style="display:none;">
+    <div class="stars"></div>
+    <div class="container">
+      <h1 class="fade-in glow">Happy Birthday</h1>
+      <h2 class="fade-in glow">Nayya Keysa Putri</h2><br>
+
+      <p class="fade-in delay-1 teks-utama">
+        Happy 20th Birthday, Love..
+      </p>
+      <p class="fade-in delay-2 teks-utama">
+        Di usia yang baru ini, aku harap kamu selalu dikelilingi oleh ketenangan, cinta, dan hal-hal yang membuatmu bertumbuh jadi pribadi yang lebih kuat dan bahagia.
+      </p>
+      <p class="fade-in delay-3 teks-utama">
+        I may not be able to give you everything,<br>
+        but I’ll always give you my support, my time, and my heart.
+      </p>
+      <p class="fade-in delay-4 teks-utama">
+        Terima kasih karena sudah menjadi sosok yang selalu sabar dan tulus.<br>
+        I’m proud of the woman you’re becoming.
+      </p>
+      <p class="fade-in delay-5 teks-utama">
+        May this year be gentle with you and may I always be beside you through it all. 
+      </p>
+
+      <div class="gallery fade-in delay-6">
+        <img src="foto/gambar 2.jpg" alt="Photo 1" onclick="openImage(this)" />
+        <img src="foto/gambar 3.jpg" alt="Photo 2" onclick="openImage(this)" />
+        <img src="foto/gambar 4.jpg" alt="Photo 3" onclick="openImage(this)" />
+        <img src="foto/gambar 5.jpg" alt="Photo 3" onclick="openImage(this)" />
+        <img src="foto/gambar 6.jpg" alt="Photo 3" onclick="openImage(this)" />
+        <img src="foto/gambar 7.jpg" alt="Photo 3" onclick="openImage(this)" />
+        <img src="foto/gambar 8.jpg" alt="Photo 3" onclick="openImage(this)" />
+      </div>
+    </div>
+
+    <div class="modal" id="modal" onclick="closeImage()">
+      <img id="modal-img" src="" alt="Enlarged Photo" />
+    </div>
+  </div>
+
+  <!-- Background music -->
+  <audio id="bgMusic" src="lagu.mp3/happy birthday.mp3" loop></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
